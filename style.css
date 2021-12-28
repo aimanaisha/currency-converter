@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('img/colour.jpg');
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+h1{
+    color: #2b475a;
+    letter-spacing: 5px;
+    font-size: 4.9rem;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.from, .to{
+    width: 290px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.main-box{
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(190, 186, 186, 0.3) 0%,
+        rgba(94, 85, 85, 0.1) 100%);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(255, 255, 255, 0.5) -20px -20px 45px inset,
+    rgba(0, 0, 0, 0.1) 10px 10px 20px, rgba(0, 0, 0, 0.06) 5px 5px 10px;
+    width: 800px;
+    height: 489px;
+    font-size: 1.55rem;
+    padding-top: 25px;
+    margin: auto;
+    color: #04212c;
+    font-family: 'Alef', sans-serif;
+
+}
+.converter{
+    padding-top: 16px;
+    padding-bottom: 10px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+}
+select{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    padding: 0px 15px;
+    margin-top: 9px;
+    margin-right: 25px;
+    width: 280px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.3);
+    border: 1px solid rgba(109, 93, 93, 0.4);
+    backdrop-filter: blur(30px);
+    color: rgba(1, 8, 15,);
+    outline: none;
+}
+input[type='number']{
+    font-family: 'Roboto Mono', monospace;
+    padding: 5px;
+    font-size: 1rem;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(238, 225, 225, 0.3);
+    border: 1px solid rgba(109, 93, 93, 0.4);
+    backdrop-filter: blur(30px);
+    color: rgba(1, 8, 15,);
+    outline: none;    
+}
+button{
+    margin: 20px;
+    font-size: 1.3rem;
+    padding: 10px 40px;
+    border-radius: 5px;
+    background-color: #304e63    ;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.9);
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 3px;
+}
+
+button:hover{
+    background-color: #264053;
+    color: rgba(216, 207, 207, 0.9);
+}
+.result-div{
+    font-size: 1.5rem;
+    width: 600px;
+    padding: 20px;
+    line-height: 40px;
+    background-color: rgb(39, 65, 84,0.8);
+    color: rgb(211, 199, 199);
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 24px;
+    height:150px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;    
+}
+.middle{   
+    width: 400px;
+    height: 120px;
+    padding-top: 15px;
+    margin: auto;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.rate-text{
+    color: rgb(5, 23, 44);
+}
+
+
+@media(max-width:900px){
+    h1{
+        font-size: 4rem;
+    }
+}
+@media(max-width:600px){
+    h1{
+        font-size: 2.5rem;
+        margin: 20px;
+    }
+    .main-box{
+        width: 340px;
+        height: 595px;
+        font-size: 1.3rem;
+        margin: auto;
+        padding-top: 50px;
+        text-align: center;
+    }
+    .converter{
+        padding-top: 16px;
+        padding-bottom: 10px;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .from, .to{
+        width: 290px;
+        margin: 15px 10px ;
+    }
+    .middle{
+        margin-top: 55px;
+        display: flex;
+        flex-direction: column;
+    }
+    select{
+        text-align: center;
+    }
+    .middle label{
+      /* position: fixed; */
+      padding-right: 58px;
+    }
+    #quantity{
+        margin-top: 15px;
+        position: relative;
+        left:115px
+    }
+    button{
+        width: 170px;
+        text-align: center;
+        position: relative;
+        left:65px;
+        bottom: 20px;
+        padding: 10px 25px;
+        margin-top: none;
+    }
+    section, .result-div{
+        width:320px;
+        font-size: 1.2rem;
+        height: 155px;
+        margin: auto;
+        margin-top: 70px;
+        line-height: 30px;
+    } 
+
+}
