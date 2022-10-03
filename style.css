@@ -128,6 +128,29 @@ input::-webkit-inner-spin-button {
     color: rgb(5, 23, 44);
 }
 
+#loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    display: none;
+}
+
+#loader span{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+    border-radius: 50%;
+    background-color: rgb(39, 65, 84,0.8);
+    animation: zoom 900ms infinite ease-in-out;
+    transform: scale(0);
+}
+
+@keyframes zoom {
+    0% { transform: scale(0)}
+    50% { transform: scale(1)}
+    100% { transform: scale(0)}
+}
 
 @media(max-width:900px){
     h1{
