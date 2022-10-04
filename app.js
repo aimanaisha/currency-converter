@@ -6,6 +6,7 @@ const to=document.querySelector('#to');
 const submitBtn=document.querySelector('#submit');
 const quantityInput=document.querySelector('#quantity');
 const section=document.querySelector('section');
+const loader=document.querySelector('#loader');
 
 // EventListeners
 
@@ -25,10 +26,10 @@ form.addEventListener('submit',(e)=>{
     // console.log(quantityInputValue);
     // console.log(baseValue);
     // console.log(targetValue);
-
+    loader.style.display = "flex";
     axios.get(`https://v6.exchangerate-api.com/v6/48b00af89071686b6959f4ca/pair/${baseValue}/${targetValue}/${quantityValue}`)
         .then((res)=>{
-
+        loader.style.display = "none";
         const rate= res.data.conversion_rate;
         const result= res.data.conversion_result;
 
